@@ -1,0 +1,32 @@
+{
+  "name": "sales-analytics-dashboard",
+  "version": "1.0.0",
+  "description": "A sales analytics dashboard built with MERN stack.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "client:build": "npm run build --prefix frontend",
+    "server:build": "npm run build --prefix frontend && node backend/server.js",
+    "heroku-postbuild": "npm run build --prefix frontend"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^8.18.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "keywords": [
+    "MERN",
+    "sales",
+    "analytics",
+    "dashboard"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
